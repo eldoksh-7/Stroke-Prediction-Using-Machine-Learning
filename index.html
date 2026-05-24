@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stroke Prediction</title>
+</head>
+<body>
+
+<h1>Stroke Prediction App</h1>
+
+<form action="/predict" method="post">
+
+    <label>Age:</label>
+    <input type="text" name="age"><br><br>
+
+    <label>Hypertension:</label>
+    <input type="text" name="hypertension"><br><br>
+
+    <label>Heart Disease:</label>
+    <input type="text" name="heart_disease"><br><br>
+
+    <label>Glucose Level:</label>
+    <input type="text" name="glucose"><br><br>
+
+    <label>BMI:</label>
+    <input type="text" name="bmi"><br><br>
+
+    <label>Risk Score:</label>
+    <input type="text" name="risk_score"><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
